@@ -4,7 +4,7 @@ Prints the `given` that was resolved in a method which expects `using`.
 
 ```scala
 //> using scala 3.3.3
-//> using dep com.kubuszok.explain_given.ExplainGiven:0.1.0
+//> using dep com.kubuszok::explain-given:0.1.0
 //> using dep io.circe::circe-generic::0.14.9
 
 case class Foo(a: Int, b: String)
@@ -20,3 +20,5 @@ Bar(List(Foo(10, "test"))).asJson(ExplainGiven.withHint)
 // println only (runtime)
 Bar(List(Foo(10, "test"))).asJson(ExplainGiven.withPrintln)
 ```
+
+![screenshot](/screenshot.png)
